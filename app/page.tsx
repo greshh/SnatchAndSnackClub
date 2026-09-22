@@ -11,13 +11,13 @@ export default function Home() {
           <Image id="logo" src="/logo/transparent.png" alt="Snatch & Snack Club Logo" width={400} height={400} className="h-48 md:h-68 w-auto" />
           <a href="/">
             <div className="w-fit h-fit md:px-16 md:py-6 px-10 py-3 bg-white rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-500">
-              <p className="md:text-4xl text-xl text-[#5A3825] tracking-wider">{"Book your next event".toUpperCase()}</p>
+              <p className="md:text-2xl text-md text-[#5A3825] tracking-widest">{"Book your next event".toUpperCase()}</p>
             </div>
           </a>
         </div>
-        <div className="w-full flex flex-col items-center justify-center px-10 py-10 md:px-60 md:py-20 gap-4 md:gap-8 tracking-wide">
-          <p className="text-xl md:text-3xl text-center text-[#5A3825] font-libre-baskerville italic">Pilates with a little something extra</p>
-          <p className="text-sm/6 md:text-xl/8 text-[#5A3825] font-libre-baskerville text-center">
+        <div className="w-full flex flex-col items-center justify-center px-10 py-10 md:px-60 md:py-20 gap-2 md:gap-2 tracking-wide">
+          <p className="text-base md:text-lg text-center text-[#5A3825] font-libre-baskerville italic tracking-wide">Pilates with a little something extra</p>
+          <p className="text-xs/6 md:text-sm/8 text-[#5A3825] font-libre-baskerville text-center">
             Whether you're here for the workout, the dessert, or simply an excuse to do something for yourself, there's a place for you here.
           </p>
         </div>
