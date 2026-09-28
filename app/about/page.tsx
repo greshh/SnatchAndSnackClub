@@ -14,19 +14,19 @@ export default function About() {
             <p>Our events bring together movement, beautiful spaces, good food and good people - with a little something different at every gathering.</p>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap gap-5 md:gap-0 px-10 justify-between h-fit w-full font-libre-baskerville">
+        <div className="flex flex-row flex-wrap gap-5 md:gap-0 my-0 md:my-5 px-10 justify-between h-fit w-full font-libre-baskerville">
           <div className="w-full md:w-1/4 h-full flex flex-col gap-1 text-center items-center">
-            <div className="w-40 h-40 bg-white rounded-[100%]"/>
+            {/* <div className="w-40 h-40 bg-white rounded-[100%]"/> */}
             <h3 className="font-luxurious-script text-4xl md:text-5xl">Move</h3>
             <p className="text-xs leading-relaxed tracking-wide">Pop-up group classes designed to make you feel strong, energised and confident.</p>
           </div>
           <div className="w-full md:w-1/4 h-full flex flex-col gap-1 text-center items-center">
-            <div className="w-40 h-40 bg-white rounded-[100%]"/>
+            {/* <div className="w-40 h-40 bg-white rounded-[100%]"/> */}
             <h3 className="font-luxurious-script text-4xl md:text-5xl">Treat</h3>
             <p className="text-xs leading-relaxed tracking-wide">Curated desserts and little indulgences that make every event feel special.</p>
           </div>
           <div className="w-full md:w-1/4 h-full flex flex-col gap-1 text-center items-center">
-            <div className="w-40 h-40 bg-white rounded-[100%]"/>
+            {/* <div className="w-40 h-40 bg-white rounded-[100%]"/> */}
             <h3 className="font-luxurious-script text-4xl md:text-5xl">Give</h3>
             <p className="text-xs leading-relaxed tracking-wide">Events that create opportunities to support charities and causes that matter.</p>
           </div>

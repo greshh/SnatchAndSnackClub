@@ -52,14 +52,26 @@ export default function Contact() {
         </div>
         <div className="flex flex-col gap-5 w-full px-0 lg:px-24">
           <h2 className="font-luxurious-script text-4xl md:text-5xl text-center">Get in Touch</h2>
-          <form className="flex flex-col items-center w-full gap-3 text-xs md:text-sm tracking-wide font-libre-baskerville mb-1" onSubmit={sendEmail}>
+          <form className="flex flex-col items-center w-full gap-3 text-xs md:text-sm tracking-wide font-libre-baskerville md:mb-1" onSubmit={sendEmail}>
             <input type="text" name="name" placeholder="Name" required className="w-full px-2 py-2 border border-[#5A3825] rounded-2xl outline-[#5A3825] bg-white text-center"/>
             <input type="email" name="email" placeholder="Email" required className="w-full px-2 py-2 border border-[#5A3825] rounded-2xl outline-[#5A3825] bg-white text-center"/>
             <textarea name="message" placeholder="Message" required className="w-full mb-2 px-2 py-2 border border-[#5A3825] rounded-2xl outline-[#5A3825] h-24 bg-white text-center"/>
             <button type="submit" className="bg-[#FC97AE] text-white italic tracking-wider text-base md:text-lg px-5 py-2 rounded-2xl font-bold hover:bg-[#E37E95] hover:cursor-pointer transition-all duration-500 w-fit">Send Message</button>
           </form>
-          <p className="text-xs tracking-wide font-libre-baskerville text-center italic">{emailStatus === "success" && "Email sent successfully! We will get back to you shortly."}</p>
-          <p className="text-xs tracking-wide font-libre-baskerville text-center italic">{emailStatus === "error" && "Something went wrong. Please try again."}</p>
+          <div>
+            <p 
+              className="text-xs tracking-wide font-libre-baskerville text-center italic"
+              style={{ display: emailStatus === "idle" ? "hidden" : "block" }}
+            >
+              {emailStatus === "success" && "Email sent successfully! We will get back to you shortly."}
+            </p>
+            <p 
+              className="text-xs tracking-wide font-libre-baskerville text-center italic"
+              style={{ display: emailStatus === "idle" ? "hidden" : "block" }}
+            >
+              {emailStatus === "error" && "Something went wrong. Please try again."}
+            </p>
+          </div>
         </div>
         <div className="flex flex-col gap-3 lg:px-24">
           <h2 className="font-luxurious-script text-4xl md:text-5xl text-center">Collaborations</h2>

@@ -26,13 +26,16 @@ export default function Parallax() {
   }, []);
 
   return (
-    <div className="relative h-fit w-full z-0">
+    <div className="relative h-full w-full z-0 hidden sm:block">
       <div ref={bgRef} className="absolute inset-0 z-0 w-full h-screen">
         <Image 
           src="/background.jpg"
           alt="background" 
-          fill 
-          className="object-cover w-full object-bottom"
+          width={2000}
+          height={2000}
+          priority
+          quality={100}
+          className="object-cover w-full object-bottom h-full"
         />
       </div>
     </div>
